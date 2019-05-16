@@ -1,27 +1,3 @@
-/* [2/5/2019] he metido los JButtons en un array, de forma que he podido eliminar líneas 
- * de código innecesarias, aunque el tema de los Action Listeners no he podido arreglarlo
- * con un bucle.
- * 
- * [3/5/2019] Me he creado mi propia clase Action dentro de Window de forma que 
- * implemente la interfaz ActionListener y pueda sobrecargar el método ActionPerformed.
- * Además, como está dentro de la clase Window, peudo acceder a sus atributos
- * y realizar la acción necesaria cuando se invoque al método ActionPerformed. Con
- * esto doy por terminada la mejora de eficiencia que buscaba en el juego.
- * 
- * 
- * Abrir el workspace Javatus para que esto tire.
- * 
- * Cómo exportar un JAR File: 
- *  
- *  File -> Export -> Java -> Runnable JAR File
- *  Launch configuration : Class containing the public static void main(String[] args)
- *	Export destination : Target place
- *
- *	Library Handling: "Package required libraries into generated JAR"
- * 	
- * Y listo
- */
-
 package Interfaz;
 
 //import java.awt.BorderLayout;
@@ -154,7 +130,7 @@ public class Window extends JFrame{
 		btts[7].setBounds(125, 220, 76, 65);
 		btts[8].setBounds(201, 220, 76, 65);
 
-		//this works (as expected), but on eclipse's design tab it doesn´t show the buttons anymore.
+		//this works (as expected), but on eclipse's design tab it doesnÂ´t show the buttons anymore.
 		// This is because of changind the auto-generated code (making an array of buttons...)
 		
 		textField = new JTextField();
